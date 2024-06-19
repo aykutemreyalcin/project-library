@@ -3,10 +3,12 @@ class Book:
         self.title = title
         self.author = author
         self.isbn = isbn
-        self.available = available
+        self.available = True
 
     def __str__(self):
-        return f"title : {self.title} , author : {self.author} , isbn : {self.isbn} , availability : {self.available}"
+        availability = "available" if self.available else "not available"
+        return f"title : {self.title} , author : {self.author} , isbn : {self.isbn} , availability : {availability}"
+    
     
     
 
