@@ -1,16 +1,14 @@
-from main import Person
-from book import *
-
-class Patron(Person):
+class Patron():
     def __init__(self,name,patron_id):
-        super().__init__(name,patron_id)
+        self.name = name
+        self.patron_id = patron_id
         self.borrowed_books = []
 
     def __str__(self):
         borrowed_book_titles = ", ".join([i for i in self.borrowed_books])
         return f"patron name : {self.name} , patron id : {self.patron_id} borrowed books : {borrowed_book_titles}"
 
-    def borrow_book(self,library,book):
+    def borrow_book(self,book):
         if book.available:
             self.borrowed_books.append(book)
             book.available = False
