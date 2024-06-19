@@ -1,6 +1,6 @@
 from main import Person
 
-class Patron:
+class Patron(Person):
     def __init__(self,name,patron_id):
         self.name = name
         self.patron_id = patron_id
@@ -13,4 +13,3 @@ class Patron:
 
     def return_book(self,book):
         pass
-
