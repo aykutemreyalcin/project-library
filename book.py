@@ -8,7 +8,3 @@ class Book:
     def __str__(self):
         availability = "available" if self.available else "not available"
         return f"title : {self.title} , author : {self.author} , isbn : {self.isbn} , availability : {availability}"
-    
-    
-    
-

@@ -21,5 +21,3 @@ class Librarian():
     def remove_patron(self,library,patron):
         library.remove_patron(patron)
         print(f"{self.name} removed patron {patron.name} from the library")
-
-    

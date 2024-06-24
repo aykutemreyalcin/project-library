@@ -23,5 +23,3 @@ class Patron():
             print(f"{self.name} returned {book.title}")
         else:
             print(f"{book.title} is not at {self.name}")
-
-

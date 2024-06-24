@@ -5,4 +5,3 @@ class Person:
     
     def __str__(self):
         return f"name : {self.name} , id : {self.person_id}"
-
